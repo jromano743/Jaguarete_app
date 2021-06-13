@@ -16,6 +16,9 @@ body{
 
 
 /* ENCABEZADO */
+h1{
+    text-align: center;
+}
 header{ 
     height: 6em; 
     background-color:rgb(31, 129, 6);
@@ -90,7 +93,7 @@ header{
     border-radius: 10px; 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
 }
-#bloque_MasProductos{
+#bloque_Max{
     width: 94%;
     height: 10em;
     margin-top: 2% ;
