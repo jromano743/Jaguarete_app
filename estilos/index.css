@@ -51,64 +51,89 @@ header{
         height: auto;
         padding-block-end: 1em;
         margin: 50px auto;  
-        background: #fff;  
+      
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background: rgb(255, 255, 255);  
     
 } 
 #bloque_1{
     width: 30%;
-    height: 10em;
+   
     float: left;
     margin-top: 2% ;
     margin-left: 3%;  
     margin-right: 2%;  
     position: relative;
-    background: rgb(196, 196, 196);  
+     
    
     border-radius: 10px; 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 #bloque_2{
     width: 30%;
-    height: 10em;
+    
     margin-top: 2% ;
     margin-right: 2%;  
     float: left;
     position: relative; 
-    background: rgb(196, 196, 196);  
+   
    
     border-radius: 10px; 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 #bloque_3{
     width: 30%;
-    height: 10em;
+    
     margin-top: 2% ;
     margin-right: 2%;  
     float: left;
     position: relative; 
-    background: rgb(196, 196, 196);  
+    
     border-radius: 10px; 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
 }
 #bloque_Max{
     width: 94%;
-    height: auto;
+    
     margin-top: 2% ;
     margin-right: 2%;  
     margin-left: 3%; 
     float: left;
     position: relative; 
-    background: rgb(196, 196, 196);  
+    background: rgb(255, 255, 255);  
   
     border-radius: 10px; 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
 }
+#contenido img{
+    height: 20%;
+    width: 20%;
+}
+#contenido button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  #contenido button:hover,.form button:active,.form button:focus {
+    background: #43A047;
+  }
 /* bloques del cuerpo responsive */
 @media screen and (max-width: 650px){ 
     #bloque_1{
+        height: auto;
         width: 94%;
         margin-top: 2% ;
         margin-left: 3%;  
@@ -116,6 +141,7 @@ header{
       
     }
     #bloque_2{
+        height: auto;
         width: 94%;
         margin-top: 2% ;
         margin-left: 3%;  
@@ -123,6 +149,7 @@ header{
        
     }
     #bloque_3{
+        height: auto;
         width: 94%;
         margin-top: 2% ;
         margin-left: 3%;  
