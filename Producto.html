@@ -2,7 +2,7 @@
 <html lang="es">
 
   <head>
-<title>Jaguarete KAA</title>
+    <title>Jaguarete KAA</title>
     <link rel="stylesheet" href="./estilos/index.css">
     <meta charset="utf-8">
     <meta name="viewport"
@@ -15,13 +15,15 @@
 
   <body>
     <div id="contenedor">
-     <header id="encabezado">
+      <header id="encabezado">
         <button type="button" class="btn btn-success" role="link" onclick="window.location='Login.html'">LOGIN</button>
-        <button type="button" class="btn btn-success" role="link" onclick="window.location='Registro.html'">REGISTRO</button>
-        <button type="button" class="btn btn-success" role="link" onclick="window.location='Carrito.html'">CARRITO</button>
+        <button type="button" class="btn btn-success" role="link"
+          onclick="window.location='Registro.html'">REGISTRO</button>
+        <button type="button" class="btn btn-success" role="link"
+          onclick="window.location='Carrito.html'">CARRITO</button>
 
       </header>
- <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -44,12 +46,12 @@
               </li>
               <li><a href="AcercaDe.html">ACERCA DE...</a></li>
               <li><a href="mailto:miMail@gmail.com">CONTACTO</a></li>
-               <li><a href="Producto.html">NUEVO PRODUCTO</a></li>
+              <li><a href="Producto.html">NUEVO PRODUCTO</a></li>
               <form class="navbar-form navbar-left" action="ResultadoBusqueda.html">
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Buscar" name="search">
                   <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit" >
+                    <button class="btn btn-default" type="submit">
                       <i class="glyphicon glyphicon-search"></i>
                     </button>
                   </div>
@@ -59,12 +61,35 @@
         </div>
       </nav>
       <section id="contenido">
-        <article>
-         <h1>NUEVO PRODUCTO</H1>
-          <div id="bloque_Max"></div>
-          </article>
+        <article id="producto">
+          <h1>NUEVO PRODUCTO</H1>
+          <div id="imagenes">
+            <img src="" alt="">
+          </div>
+          <div id="categoria">
+            <div id="descripcion">
+              <h2>Categoria</h2>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of
+                letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved
+                over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div> <br>
+            <div id="comprar">
+              <p id="precio">Precio $xxxxxxx</p>
+
+              <button type="button" class="btn btn-success" role="link" onclick="window.location='Carrito.html'">AGREGAR
+                AL
+                CARRITO</button>
+            </div>
+          </div>
+
+        </article>
       </section>
-            <!-- copyright -->
+      <!-- copyright -->
       <footer>
         <div class="copyright">
           &copy; 2021 Jaguarete KAA. Derechos reservados.

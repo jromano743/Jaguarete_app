@@ -130,6 +130,93 @@ header{
   #contenido button:hover,.form button:active,.form button:focus {
     background: #43A047;
   }
+
+  
+
+#imagenes {
+    width: 40%;
+    height: 30em;
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 2%;
+    border-radius: 10px;
+    background-color: #a6a6a6;
+}
+
+#categoria {
+    width: 50%;
+    padding: 20px;
+    height: 30em;
+    margin-top: 2%;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+#descripcion{
+    height: 18em;
+
+}
+
+#precio {
+    margin: 0 0 10px;
+    text-align: left;
+    float: left;
+    margin-top: 6%;
+    margin-right: 18%;
+    border-radius: 10px;
+}
+#producto button {
+
+    float: left;
+    width: 60%;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* responsive producto */
+@media screen and (max-width: 650px){ 
+    #imagenes{
+    
+        width: 94%;
+        margin-top: 2% ;
+        margin-left: 3%;  
+        margin-right: 2%;  
+      
+    }
+    #categoria{
+        height: auto;
+        width: 94%;
+        margin-top: 2% ;
+        margin-left: 3%;  
+        margin-right: 2%;  
+       
+    }
+    #descripcion{
+        height: auto;
+        width: 94%;
+        margin-top: 2% ;
+        margin-left: 3%;  
+        margin-right: 2%;
+    }
+  
+    #precio {
+        height: auto;
+        width: 94%;
+        margin-top: 2% ;
+        margin-left: 3%;  
+        margin-right: 2%; 
+    }
+    #producto button {
+    
+        height: auto;
+        width: 94%;
+        margin-top: 2% ;
+        margin-left: 3%;  
+        margin-right: 2%; 
+    }
+}
 /* bloques del cuerpo responsive */
 @media screen and (max-width: 650px){ 
     #bloque_1{
