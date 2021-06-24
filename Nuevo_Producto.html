@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Nuevo Producto</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./estilos/index.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <div id="contenedor">
+            <header id="encabezado">
+                <button type="button" class="btn btn-success" role="link"
+                    onclick="window.location='Login.html'">LOGIN</button>
+                <button type="button" class="btn btn-success" role="link"
+                    onclick="window.location='Registro.html'">REGISTRO</button>
+                <button type="button" class="btn btn-success" role="link"
+                    onclick="window.location='Carrito.html'">CARRITO</button>
+
+            </header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><b style="color: brown;">JAGUA</b>RETE KAA</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">HOME</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATEGORÍAS <span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Page 1-1</a></li>
+                                    <li><a href="#">Page 1-2</a></li>
+                                    <li><a href="#">Page 1-3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="AcercaDe.html">ACERCA DE...</a></li>
+                            <li><a href="mailto:miMail@gmail.com">CONTACTO</a></li>
+                            <li><a href="Nuevo_Producto.html">NUEVO PRODUCTO</a></li>
+                            <form class="navbar-form navbar-left" action="ResultadoBusqueda.html">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Buscar" name="search">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </nav>
+            <section id="contenido">
+                <article id="crear_producto">
+                    <form method="post" action="" enctype="multipart/form-data"></form>
+                    <h1>
+                        <input type="text" name="nombre_producto" placeholder="Nombre" id="nombre_producto">
+                    </h1>
+
+                    <div id="imagenes">
+                        <label for="subir_imagen"> Subir imagen:</label>
+                        <input id="subir_imagen" type="file" name="file[]" multiple>
+                    </div>
+
+                    <div id="categoria">
+
+                        <select name="select" id="seleccion_categoria">
+                            <option value="value1">categoria 1</option>
+                            <option value="value2">categoria 2</option>
+                            <option value="value3">categoria 3</option>
+                        </select>
+            
+
+
+                            <div class="form-group">
+                                <label for="descripcion">Descripción</label>
+                                <textarea class="form-control" id="descripcion" rows="8"></textarea>
+                            </div>
+                        <br>
+                        <div id="crear_precio">
+                            <input type="text" name="precio" placeholder="precio" id="precio" required>
+
+                            <button type="button" class="btn btn-success" >CREAR</button>
+                        </div>
+                    </div>
+                    </form>
+                </article>
+            </section>
+            <!-- copyright -->
+            <footer>
+                <div class="copyright">
+                    &copy; 2021 Jaguarete KAA. Derechos reservados.
+                </div>
+            </footer>
+        </div>
+    </body>
+
+    </body>
+
+</html>
